@@ -42,7 +42,7 @@ jobs:
     # permissions:
     #   contents: write
     needs: quality-check
-    uses: honda-research-institute/auto-reviewer/.github/workflows/select-auto-reviewer.yaml@v0.2.1
+    uses: honda-research-institute/auto-reviewer/.github/workflows/select-auto-reviewer.yaml
     with:
       review_task: ${{ github.event.inputs.review_task }}
     secrets:
