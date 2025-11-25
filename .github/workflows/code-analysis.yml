@@ -39,8 +39,8 @@ jobs:
         uses: actions/checkout@v3
 
   run-auto-reviewer:
-    permissions:
-      contents: write
+    # permissions:
+    #   contents: write
     needs: quality-check
     uses: honda-research-institute/auto-reviewer/.github/workflows/select-auto-reviewer.yaml@v0.2.1
     with:
